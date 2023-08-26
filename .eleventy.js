@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
     // Return your Object options:
     return {
       dir: {
+        pathPrefix: "/everyday/",
         input: "src", // default is "."
         output: "_site" // default is "_site"
       }

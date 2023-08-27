@@ -1,16 +1,7 @@
-const markdownIt = require("markdown-it");
-
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/css/style.css');
     eleventyConfig.addPassthroughCopy("src/static/images");
-
-    let options = {
-        html: true,
-        breaks: true,
-        linkify: true
-    };
-    eleventyConfig.setLibrary("md", markdownIt(options));
 
     // Return your Object options:
     return {

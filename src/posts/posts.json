@@ -1,5 +1,4 @@
 {
     "layout": "base.njk",
-    "tags": ["posts"],
-    "date": "git Created"
+    "tags": ["posts"]
 }

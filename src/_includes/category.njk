@@ -1,10 +1,16 @@
 <section>
 <div>
-	{%- for post in collections.posts | reverse -%}
-	<li>
-      <a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
-      <em>{{ post.date | date: "%Y-%m-%d" }}</em>
-    </li>
+{%- if tag == 'emma' -%}
+	{%- for post in collections.emma | reverse -%}
+	{%- include 'post-card.njk' -%}
 	{%- endfor -%}
+{%- elsif tag == 'conor' -%}
+	{%- for post in collections.conor | reverse -%}
+	{%- include 'post-card.njk' -%}
+	{%- endfor -%}
+{%- else -%}
+	{%- for post in collections.posts | reverse -%}
+	{%- include 'post-card.njk' -%}
+	{%- endfor -%}
+{% endif %}
 </div>
-</section>

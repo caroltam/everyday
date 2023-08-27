@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-	{% include 'title-and-meta.njk' %}
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-	{% include 'header.njk' %}
-    <h1>{{ pageTitle }}</h1>
-	<main>
-		{{ content | safe }}
-	</main>
-	{% include 'footer.njk' %}
-</body>
+  <head>
+    {% include 'title-and-meta.njk' %}
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  </head>
+  <body>
+    {% include 'header.njk' %}
+
+    <main>
+      <section>
+        <h1>{{ pageTitle }}</h1>
+        {{ content | safe }}
+      </section>
+    </main>
+
+    {% include 'footer.njk' %}
+  </body>
 </html>

@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/css/style.css -o ./src/css/output.css --watch",
     "start": "eleventy --serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carol Tam",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "tailwindcss": "^3.3.3"
   }
 }

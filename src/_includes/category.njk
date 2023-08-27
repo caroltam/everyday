@@ -1,16 +1,20 @@
-<section>
-<div>
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="-my-8 divide-y-2 divide-gray-100">
 {%- if tag == 'emma' -%}
-	{%- for post in collections.emma | reverse -%}
+	{%- for post in collections.emma reversed -%}
 	{%- include 'post-card.njk' -%}
 	{%- endfor -%}
 {%- elsif tag == 'conor' -%}
-	{%- for post in collections.conor | reverse -%}
+	{%- for post in collections.conor reversed -%}
 	{%- include 'post-card.njk' -%}
 	{%- endfor -%}
 {%- else -%}
-	{%- for post in collections.posts | reverse -%}
+	{%- for post in collections.posts reversed -%}
 	{%- include 'post-card.njk' -%}
 	{%- endfor -%}
 {% endif %}
-</div>
+
+    </div>
+  </div>
+</section>

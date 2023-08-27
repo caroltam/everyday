@@ -2,14 +2,13 @@
 <html>
   <head>
     {% include 'title-and-meta.njk' %}
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/output.css' | url }}">
   </head>
   <body>
     {% include 'header.njk' %}
-
     <main>
       <section>
-        <h1>{{ pageTitle }}</h1>
+        <h1>{{ title }}</h1>
         {{ content | safe }}
       </section>
     </main>

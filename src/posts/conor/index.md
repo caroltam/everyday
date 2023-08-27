@@ -1,5 +1,5 @@
 ---
-pageTitle: Conor
+title: Conor
 eleventyExcludeFromCollections: true
 ---
 {% include 'category.njk' %}

@@ -12,7 +12,7 @@
   "author": "Carol Tam",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.1.0",
     "tailwindcss": "^3.3.3"
   }
 }
